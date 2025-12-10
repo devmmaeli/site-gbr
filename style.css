@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #d4af37;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #000;
+    border-bottom: 2px solid #d4af37;
+}
+
+.topo nav a {
+    color: #d4af37;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d4af37;
+}
+
+.banner {
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.banner h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.estoque, .sobre, .contato {
+    padding: 50px 40px;
+}
+
+.car-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.car-card {
+    width: 310px;
+    padding: 15px;
+    border: 2px solid #d4af37;
+    background: #111;
+    text-align: center;
+}
+
+.car-card img {
+    width: 100%;
+}
+
+.car-card button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #d4af37;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #d4af37;
+}
+
+/* Botão WhatsApp flutuante */
+.zap {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    border-radius: 50%;
+    font-size: 32px;
+    text-align: center;
+    line-height: 55px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

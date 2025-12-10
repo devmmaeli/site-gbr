@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>GBR Motors</title>
+<style>
+body { margin:0; font-family:Arial, sans-serif; background:#000; color:#fff; }
+header { padding:20px; text-align:center; background:#111; font-size:24px; }
+.carousel { position:relative; overflow:hidden; }
+.slide { display:none; width:100%; }
+.slide img { width:100%; display:block; }
+.nav { text-align:center; margin:10px 0; }
+.nav button { background:#d4a01f; border:none; padding:8px 12px; margin:0 5px; cursor:pointer; border-radius:4px; }
+</style>
+</head>
+<body>
+<header>GBR Motors</header>
+<div class="carousel">
+  <!-- Slides injected -->
+<div class="slide"><img src="assets/IMG-20251208-WA0045.jpg" alt="car"/></div>
+<div class="slide"><img src="assets/IMG-20251208-WA0043.jpg" alt="car"/></div>
+<div class="slide"><img src="assets/IMG-20251208-WA0046.jpg" alt="car"/></div>
+<div class="slide"><img src="assets/IMG-20251208-WA0047.jpg" alt="car"/></div>
+<div class="slide"><img src="assets/IMG-20251208-WA0044.jpg" alt="car"/></div>
+
+</div>
+<div class="nav">
+  <button onclick="plusSlides(-1)">‹</button>
+  <button onclick="plusSlides(1)">›</button>
+</div>
+<script>
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+function showSlide(n){
+  if(!slides.length) return;
+  if(n >= slides.length) slideIndex = 0;
+  if(n < 0) slideIndex = slides.length-1;
+  for(let i=0;i<slides.length;i++) slides[i].style.display="none";
+  slides[slideIndex].style.display="block";
+}
+function plusSlides(n){ showSlide(slideIndex += n); }
+showSlide(slideIndex);
+</script>
+</body>
+</html>
